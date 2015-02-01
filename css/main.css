@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    border: 0;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+/* Audio Player */
+
+#audio-player-wrapper{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #000;
+  height: 70px;
+}
+
+/* Menu Top */
+
+#menu {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  background-color: #000;
+  height: 70px;
+}
+
+#menu-inside {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 950px;
+}
+
+#logo {
+  float: left;
+  margin-right: 25px;
+  color: white;
+  font-size: 222%;
+}
+
+#top-menu li {
+  float: left;
+  margin-right: 20px;
+}

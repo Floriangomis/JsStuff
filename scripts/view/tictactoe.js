@@ -70,7 +70,7 @@ define('scripts/view/tictactoe', function(){
 				canvas.addEventListener( 'click', clickHandler );
 			};
 
-			var drawImage = function( image, xSource, ySource, widthImage, heightImageSource, xDestinationSource, yDestination, widthImageFinal, widthHeightFinal ){
+			var render = function( image, xSource, ySource, widthImage, heightImageSource, xDestinationSource, yDestination, widthImageFinal, widthHeightFinal ){
 				context.drawImage( image, xSource, ySource, widthImage, heightImageSource, xDestinationSource, yDestination, widthImageFinal, widthHeightFinal );
 			};
 
@@ -80,7 +80,7 @@ define('scripts/view/tictactoe', function(){
 
 			return {
 				initialize : initialize,
-				drawImage : drawImage,
+				render : render,
 				getGameBoardDimension : getGameBoardDimension,
 			}
 

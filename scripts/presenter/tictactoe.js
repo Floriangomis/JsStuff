@@ -66,12 +66,12 @@ define('scripts/presenter/tictactoe',
 				var xSource = (xSourceEnTiles - 1) * 285;
 				var ySource = (ySourceEnTiles - 1) * 285;
 
-				tictactoeView.drawImage( 	image,
-											xSource, ySource,
-											285, 285,
-											x * ( tictactoeView.getGameBoardDimension().dimension.width / 3 ), y * ( tictactoeView.getGameBoardDimension().dimension.height / 3 ),
-											164, 164	);
-			}
+				tictactoeView.render( 	image,
+										xSource, ySource,
+										285, 285,
+										x * ( tictactoeView.getGameBoardDimension().dimension.width / 3 ), y * ( tictactoeView.getGameBoardDimension().dimension.height / 3 ),
+										164, 164	);
+		}
 
 			return {
 				initialize : initialize,

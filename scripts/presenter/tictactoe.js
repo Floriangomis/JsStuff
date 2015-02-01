@@ -2,13 +2,16 @@ define('scripts/presenter/tictactoe',
 
 	[	
 		'scripts/view/tictactoe',
+		'scripts/helper/tileset-manager'
 	], 
 
-	function( TictactoeView ){
+	function( TictactoeView, TileSetManager ){
 
 		var opts = {
-				
+			type : 1,
 		};
+
+		var moves = [];
 
 		var tictactoePresenter = function(){
 			this.initialize();

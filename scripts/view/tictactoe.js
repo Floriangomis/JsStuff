@@ -62,7 +62,7 @@ define('scripts/view/tictactoe', function(){
 			};
 
 			var handleClick = function(){
-				// Presenter will handle this.
+				this.presenter.handleTurnPlay.call( this );
 			};
 
 			var bindClick = function(){

@@ -20,8 +20,13 @@ define('scripts/presenter/tictactoe',
 				tictactoeView = new TictactoeView( this, {} );
 			};
 
+			var handleTurnPlay = function(){
+
+			};
+
 			return {
 				initialize : initialize,
+				handleTurnPlay : handleTurnPlay
 			}
 
 		} )();

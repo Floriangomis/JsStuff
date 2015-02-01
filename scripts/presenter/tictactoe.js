@@ -37,7 +37,7 @@ define('scripts/presenter/tictactoe',
 					}
 				}
 				if( !isTick ){
-					moves[ moves.lenght ] = moves.push( [ x, y ] );
+					moves[ moves.lenght ] = moves.push( [ x, y, opts.type ] );
 					drawPicture.call( this, x, y );
 
 					// Check if a winner
@@ -50,6 +50,9 @@ define('scripts/presenter/tictactoe',
 				}else{
 					alert( 'Already Tick !' );
 				}
+
+				// TODO : Remove once no need anymore
+				console.table( moves );
 			};
 
 			drawPicture = function( x, y ){
